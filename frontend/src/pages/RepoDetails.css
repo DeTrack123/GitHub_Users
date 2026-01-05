@@ -1,0 +1,188 @@
+/* Repository Details Page Styles */
+.repo-details-page {
+  padding: 2rem 0;
+}
+
+.repo-header {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.repo-header h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.repo-header h2 strong {
+  color: #667eea;
+}
+
+.repo-description-main {
+  font-size: 1.1rem;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.external-link {
+  display: inline-block;
+  color: #0969da;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid #0969da;
+  border-radius: 6px;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.external-link:hover {
+  background-color: #0969da;
+  color: white;
+}
+
+.repo-meta {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+  color: black;
+  font-size: 0.95rem;
+}
+
+.repo-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meta-item {
+  color: #555;
+}
+
+.meta-item strong {
+  color: #333;
+  margin-right: 0.5rem;
+}
+
+.repo-stats-large {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.stat-large {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.stat-label {
+  color: black;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.commits-section {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.commits-section h3 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.commits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.commit-card {
+  background: #f8f9fa;
+  border-left: 4px solid #667eea;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.commit-card:hover {
+  background: #e9ecef;
+}
+
+.commit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.commit-number {
+  background: #667eea;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.commit-date {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.commit-message {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.commit-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: black;
+}
+
+.commit-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.commit-link {
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .repo-meta,
+  .repo-stats-large {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .commit-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
